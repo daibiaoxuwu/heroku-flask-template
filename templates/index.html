@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Heroku Flask Template</title>
+        <title>Umami-MRNN Demo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
     </head>
     <body>
-        <h1 id="tittle">Heroku Flask Template</h1>
+        <h1 id="tittle">Umami-MRNN Demo</h1>
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="https://github.com/vetronus/heroku-flask-template">SOURCE CODE(GitHub)</a></li>
-                <li><a href="http://parthsarthee.com/">PARTH SARTHEE(Author)</a></li>
-                <li><a href="http://aroxbit.com">AROXBIT(Awesome Indie Startup)</a></li>
+                <li><a href="https://github.com/skywingwing/tfVer">SOURCE CODE(GitHub)</a></li>
             </ul>
         </nav>
-        <h2>What is Heroku Flask Template</h2>
+        <h2>What is Umami-MRNN</h2>
         <p>
-            Heroku Flask Template is a simple web app programmed in Python-3 using flask micro-framework. It is created for begginers to understand the basics of creating a flask web app and deploying it on the Heroku. It can also be used as a template to create your new flask web apps which can then easily be deployable on Heroku.
+            umami-MRNN is a deep learning based method to predict umami peptides using combinations of features calculated from the peptide sequence.
         </p><br>
-        <h3>You can download this plugin, or modify its source code from <a href="https://github.com/vetronus/heroku-flask-template">GitHub</a></h3>
+        <h3>Upload Fasta File</h3>
+        <form method="POST" action="" enctype="multipart/form-data">
+          <p><input type="file" name="file"></p>
+          <p><input type="submit" value="Submit"></p>
+        </form>
+        <h3>Predictions:</h3>
+        {{data}}
     </body>
 </html>
