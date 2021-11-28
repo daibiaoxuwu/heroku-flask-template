@@ -6447,7 +6447,7 @@ html, body {
 
 @media (min-width: 768px) {
   #app{
-    background-image: url('./wbackground.jpg');
+    background-image: url({{ url_for('static', filename='cbackground.jpg') }});
     background-position:right top;
     background-size: cover;
   }
@@ -6455,7 +6455,7 @@ html, body {
 
 @media (max-width: 767px) {
   #app{
-    background-image: url('./cbackground.jpg');
+    background-image: url('{{ url_for('static', filename='cbackground.jpg') }}');
     background-position:right top;
     background-size: cover;
   }
@@ -6467,7 +6467,7 @@ html, body {
     <body>
   <div id="app">
     <nav class="navbar navbar-expand-md bg-primary navbar-dark" style="padding:0.25rem 1.5rem">
-    <div class="container"> <a class="navbar-brand" href="#">Navbar</a> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="container"> <a class="navbar-brand" href="#">Umami-MRNN</a> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
         <ul class="navbar-nav">
         </ul> 
@@ -6497,7 +6497,7 @@ html, body {
 </form>
 <form method="POST" action="/file" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="formFile" class="form-label">...Or Upload FASTA File</label>
+        <label for="formFile" class="form-label">...Or Upload FASTA File <a href="{{ url_for('static', filename='example.txt') }}" download>Download Fasta File Example</a></label>
         <input class="form-control" type="file" id="formFile" name="file">
     </div>
     <p class="mb-3"><button type="submit" value="Submit"  class="form-control btn btn-primary">Submit</button></p>
