@@ -6484,8 +6484,10 @@ html, body {
         <div class="row">
           <div class="p-5 col-lg-12">
             <h1>Umami-MRNN</h1>
-            <p class="mb-3">A Deep Learning Based Method to Predict Umami Peptides.</p>
-           
+            <p class="mb-1">A Deep Learning Based Method to Predict Umami Peptides. Original paper: </p>
+           <p class="mb-1"> <a href="http://dx.doi.org/10.1016/j.foodchem.2022.134935">Umami-MRNN: Deep learning-based prediction of umami peptide using RNN and MLP.</a></p>
+           <p class="mb-1"> Lulu Qi, Jialuo Du, Yue Sun, Yongzhao Xiong, Xinyao Zhao, Daodong Pan, Yueru Zhi, Yali Dang, Xinchang Gao</p>
+           <p class="mb-3"> Food Chemistry, 2023 </p>
             <div class="form-group">
               <h3>Input Peptide Sequences</h3>
 <form method="POST" action="/text" enctype="multipart/form-data">
@@ -6527,7 +6529,9 @@ html, body {
             umami-MRNN is a deep learning based method to predict umami peptides using combinations of features calculated from the peptide sequence. We extract not only the widely used statistical features including amino acid composition (AAC), dipeptide composition (DPC), dipeptide deviation from expected mean (DDE), and composition-transition-distribution (CTD), but we also include the peptide sequence itself encoded with overlapping property features (OPF) and one-hot codes. We use a merged model of The Multilayer Perceptron(MLP) and recursive neural network(RNN).
         <nav>
             <ul>
-                <li><a href="https://github.com/skywingwing/tfVer">SOURCE CODE(GitHub)</a></li>
+                <li><a href="https://github.com/daibiaoxuwu/Umami-MRNN-train">SOURCE CODE FOR TRAINING(GitHub)</a></li>
+                <li><a href="https://github.com/daibiaoxuwu/umami-mrnn-flask-heroku">SOURCE CODE FOR THIS DEMO(GitHub)</a></li>
+                <li>For any questions please contact <a href="mailto:dujluo@gmail.com">dujluo@gmail.com</a></li>
             </ul>
         </nav>
         </p><br>
@@ -6541,30 +6545,30 @@ html, body {
           <p class="mb-1">The Umami-MRNN Model of Umami Peptide Prediction</p>
           <ul class="list-inline">
             <li class="list-inline-item">
-              <a href="#">Lulu Qi</a>
+              Lulu Qi
             </li>
             <li class="list-inline-item">
-              <a href="#">Jialuo Du</a>
+              <a href="https://daibiaoxuwu.github.io/">Jialuo Du</a>
             </li>
             <li class="list-inline-item">
-              <a href="#">Yue Sun</a>
+              Yue Sun
             </li>
               <li class="list-inline-item">
-              <a href="#">Yongzhao Xiong</a>
+              Yongzhao Xiong
             </li>
               <li class="list-inline-item">
-              <a href="#">Xinyao Zhao</a>
+              Xinyao Zhao
             </li>
               <li class="list-inline-item">
-              <a href="#">Daodong Pan</a>
+              Daodong Pan
             </li>
               <li class="list-inline-item">
-              <a href="#">Yueru Zhi</a>
+              Yueru Zhi
             </li>
               <li class="list-inline-item">
-              <a href="#">Xinchang Gao</a>
+              Xinchang Gao
             </li><li class="list-inline-item">
-              <a href="#">Yali Dang</a>
+              Yali Dang
             </li>                      
           </ul>
         </div>
